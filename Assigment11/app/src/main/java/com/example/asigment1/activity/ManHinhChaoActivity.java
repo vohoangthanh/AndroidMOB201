@@ -1,4 +1,4 @@
-package com.example.asigment1;
+package com.example.asigment1.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.asigment1.R;
 
 public class ManHinhChaoActivity extends AppCompatActivity {
 
@@ -25,6 +26,6 @@ public class ManHinhChaoActivity extends AppCompatActivity {
             public void run() {
                 startActivity(new Intent(ManHinhChaoActivity.this,LoginActivity.class));
             }
-        },3000);
+        },5000);
     }
 }

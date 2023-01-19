@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activityquanlykhoahoc.MonHocActivity"
+
+    >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDangKyMonHoc"
+        android:text="Đăng Kí Khóa Học "
+        android:textSize="20sp"
+        android:textColor="#605D5D"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/raidiusimg"
+        android:drawableLeft="@drawable/courses"
+        android:padding="20dp"
+        android:layout_margin="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMonHocDaDangKy"
+        android:text="Khóa Học Đã Đăng Kí "
+        android:textSize="20sp"
+        android:textColor="#605D5D"
+        android:textAllCaps="false"
+        android:background="@drawable/raidiusimg"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:drawableLeft="@drawable/register"
+        android:padding="20dp"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>

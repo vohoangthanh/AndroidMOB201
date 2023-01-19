@@ -3,13 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/drawable/acount.xml" value="0.191" />
         <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.191" />
         <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/drawable/raidius.xml" value="0.191" />
         <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/drawable/raidius_button.xml" value="0.191" />
+        <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/drawable/raidiusimg.xml" value="0.191" />
         <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/font/baloo_thambi.xml" value="0.3046875" />
+        <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/layout/activity_dang_ky_mon_hoc.xml" value="0.27447916666666666" />
         <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/layout/activity_login.xml" value="0.27447916666666666" />
         <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/layout/activity_man_hinh_chao.xml" value="0.27447916666666666" />
+        <entry key="..\:/Coder/MoB201/Assigment1/Assigment11/app/src/main/res/layout/activity_mon_hoc.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>

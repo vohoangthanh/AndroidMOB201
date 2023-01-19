@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#E5E5E5"
     android:backgroundTint="#E2BCB7"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <TextView
         android:id="@+id/txtLogin4"
@@ -75,7 +75,6 @@
         android:drawableLeft="@drawable/acount"
         android:background="@drawable/raidius_button"
         android:ems="10"
-        android:hint="Võ Hoàng Thanh"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,7 +104,6 @@
         android:layout_width="230dp"
         android:layout_height="55dp"
         android:backgroundTint="#E2BCB7"
-        android:onClick="onLoginClick"
         android:text="Login"
         android:textColor="#4E352F"
         android:fontFamily="@font/baloo_thambi"

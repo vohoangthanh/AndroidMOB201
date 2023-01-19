@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DbHelper extends SQLiteOpenHelper {
     public  DbHelper(Context context){
-        super(context,"DANGKYMONHOC",null,1);
+        super(context,"DANGKYMONHOC",null,2);
     }
 
     @Override
@@ -25,7 +25,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
 
         // insert
-        String insNguoiDung = "INSERT INTO NGUOIDUNG VALUES(1,'tridinh','123456','Trí Định'),(2,'tridinh','123456abc','Hoàng Thanh')";
+        String insNguoiDung = "INSERT INTO NGUOIDUNG VALUES(1,'thanh','123456','Hoàng Thanh'),(2,'tridinh','123456abc','Hoàng Thanh')";
         sqLiteDatabase.execSQL(insNguoiDung);
 
         String insMonHoc = "INSERT INTO MONHOC VALUES('MOB201','Androi Nang Cao','Võ Hoàng Thanh'),('MOB401','Lập Trình Game','Mang Tuấn Vĩ'),('MOB2044','Dự Án Mẫu','Võ Hoàng Thanh')";
