@@ -39,6 +39,8 @@
         </activity>
 
         <service android:name=".service.KiemTraDangNhapService" />
+        <service android:name=".service.DangKyMonHocService"/>
+        <service android:name=".service.DKMonHocService"/>
     </application>
 
 </manifest>

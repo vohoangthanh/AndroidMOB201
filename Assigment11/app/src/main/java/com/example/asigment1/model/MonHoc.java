@@ -1,14 +1,32 @@
 package com.example.asigment1.model;
 
-public class MonHoc {
+import java.io.Serializable;
+
+public class MonHoc implements Serializable {
     private String code ;
     private  String name;
     private String teacher;
+    private int isRegister;
 
     public MonHoc(String code, String name, String teacher) {
         this.code = code;
         this.name = name;
         this.teacher = teacher;
+    }
+
+    public MonHoc(String code, String name, String teacher, int isRegister) {
+        this.code = code;
+        this.name = name;
+        this.teacher = teacher;
+        this.isRegister = isRegister;
+    }
+
+    public int getIsRegister() {
+        return isRegister;
+    }
+
+    public void setIsRegister(int isRegister) {
+        this.isRegister = isRegister;
     }
 
     public String getCode() {

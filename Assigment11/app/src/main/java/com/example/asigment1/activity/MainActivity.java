@@ -29,5 +29,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        btnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MonHocActivity.class));
+            }
+        });
+
+        btnSocial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MonHocActivity.class));
+            }
+        });
+
+        btnNew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MonHocActivity.class));
+            }
+        });
+
+
     }
 }
