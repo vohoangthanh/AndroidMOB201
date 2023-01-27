@@ -14,6 +14,15 @@
         android:theme="@style/Theme.Asigment1"
         tools:targetApi="31">
         <activity
+            android:name=".activity.NewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SocialActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MapActivity"
+            android:exported="true" />
+        <activity
             android:name=".activityquanlykhoahoc.DangKyMonHocActivity"
             android:exported="true" />
         <activity
@@ -39,8 +48,8 @@
         </activity>
 
         <service android:name=".service.KiemTraDangNhapService" />
-        <service android:name=".service.DangKyMonHocService"/>
-        <service android:name=".service.DKMonHocService"/>
+        <service android:name=".service.DangKyMonHocService" />
+        <service android:name=".service.DKMonHocService" />
     </application>
 
 </manifest>

@@ -18,9 +18,11 @@ public class DangKyMonHocService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Bundle bundle = intent.getExtras();
         int id = bundle.getInt("id");
+        boolean isAll = bundle.getBoolean("isAll");
 
         DangKyMonHocDAO dangKyMonHocDAO = new DangKyMonHocDAO(this);
-        ArrayList<MonHoc> list = dangKyMonHocDAO.getDSMonHoc(id);
+        ArrayList<MonHoc> list = dangKyMonHocDAO.getDSMonHoc(id,isAll);
+
 
         Intent intentBR = new Intent();
         Bundle bundleBR = new Bundle();

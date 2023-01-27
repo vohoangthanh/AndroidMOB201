@@ -4,22 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activityquanlykhoahoc.DangKyMonHocActivity"
+    tools:context=".activity.NewActivity"
     android:gravity="center"
-    android:orientation="vertical"
     >
 
     <TextView
-        android:id="@+id/txtTitle"
-        android:textSize="30sp"
-        android:textColor="#ED0000"
-        android:text="haha"
+        android:textColor="#ED0404"
+        android:textSize="40sp"
+        android:text="New nè"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerDangKyMonHoc"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
 </LinearLayout>

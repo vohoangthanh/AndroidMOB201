@@ -2,7 +2,9 @@ package com.example.asigment1.adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.asigment1.R;
 import com.example.asigment1.model.MonHoc;
+import com.example.asigment1.service.DKMonHocService;
 
 import java.util.ArrayList;
 
@@ -21,11 +24,13 @@ public class DangKyMonHocAdapter extends RecyclerView.Adapter<DangKyMonHocAdapte
     private Context context;
     private ArrayList<MonHoc> list;
     private int id;
+    private boolean isAll;
 
-    public DangKyMonHocAdapter(Context context, ArrayList<MonHoc> list, int id) {
+    public DangKyMonHocAdapter(Context context, ArrayList<MonHoc> list, int id,boolean isAll) {
         this.id = id;
         this.context = context;
         this.list = list;
+        this.isAll = isAll;
     }
 
     @NonNull
@@ -53,7 +58,14 @@ public class DangKyMonHocAdapter extends RecyclerView.Adapter<DangKyMonHocAdapte
         holder.btnDangKy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(context, DKMonHocService.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("id", id);
+                bundle.putString("code",list.get(holder.getAdapterPosition()).getCode());
+                bundle.putInt("isRegister",list.get(holder.getAdapterPosition()).getIsRegister());
+                bundle.putBoolean("isAll",isAll);
+                intent.putExtras(bundle);
+                context.startService(intent);
             }
         });
     }

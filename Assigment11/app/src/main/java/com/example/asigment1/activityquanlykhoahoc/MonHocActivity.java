@@ -22,14 +22,22 @@ public class MonHocActivity extends AppCompatActivity {
         btnDangKyMonHoc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MonHocActivity.this,DangKyMonHocActivity.class));
+               Intent intent = new Intent(MonHocActivity.this,DangKyMonHocActivity.class);
+               Bundle bundle = new Bundle();
+               bundle.putBoolean("isAll",true);
+               intent.putExtras(bundle);
+               startActivity(intent);
             }
         });
 
         btnMonHocDaDangKy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MonHocActivity.this,MonHocDaDangKyActivity.class));
+                Intent intent = new Intent(MonHocActivity.this,DangKyMonHocActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putBoolean("isAll",false);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
     }

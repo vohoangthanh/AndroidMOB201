@@ -18,11 +18,17 @@ public class DangKyMonHocDAO {
     }
 
     // Lấy danh sách môn học
-    public ArrayList<MonHoc> getDSMonHoc(int id){
+    public ArrayList<MonHoc> getDSMonHoc(int id,boolean isAll){
         ArrayList<MonHoc> list = new ArrayList<>();
 
         SQLiteDatabase sqLiteDatabase = dbHelper.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT mh.code, mh.name, mh.teacher, dk.id FROM MONHOC mh LEFT JOIN DANGKI dk ON mh.code = dk.code AND dk.id = ?",new String[]{String.valueOf(id)});
+        Cursor cursor ;
+        if (isAll){
+           cursor = sqLiteDatabase.rawQuery("SELECT mh.code, mh.name, mh.teacher, dk.id FROM MONHOC mh LEFT JOIN DANGKI dk ON mh.code = dk.code AND dk.id = ?",new String[]{String.valueOf(id)});
+        }else {
+            cursor = sqLiteDatabase.rawQuery("SELECT mh.code, mh.name, mh.teacher, dk.id FROM MONHOC mh INNER JOIN DANGKI dk ON mh.code = dk.code WHERE dk.id = ?",new String[]{String.valueOf(id)});
+        }
+
         if (cursor.getCount() != 0){
             cursor.moveToFirst();
             do {

@@ -10,6 +10,8 @@ import android.widget.Button;
 import com.example.asigment1.R;
 import com.example.asigment1.activityquanlykhoahoc.MonHocActivity;
 
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -33,21 +35,21 @@ public class MainActivity extends AppCompatActivity {
         btnMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MonHocActivity.class));
+                startActivity(new Intent(MainActivity.this, MapActivity.class));
             }
         });
 
         btnSocial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MonHocActivity.class));
+                startActivity(new Intent(MainActivity.this, SocialActivity.class));
             }
         });
 
         btnNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MonHocActivity.class));
+                startActivity(new Intent(MainActivity.this, NewActivity.class));
             }
         });
 
